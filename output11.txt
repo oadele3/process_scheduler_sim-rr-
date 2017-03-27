@@ -1,0 +1,841 @@
+-- WARNING: All output lines starting with a double dash are there to explain
+-- in detail how the simulation proceeds and are NOT REQUIRED.
+
+-- ARRIVAL event for process 0 at t = 0 ms
+-- Process 0 starts at t = 0 ms
+-- Process 0 requests a core at t = 0 ms for 150 ms
+-- Process 0 gets a core at t = 0 ms
+-- Request of duration 150 exceeds time slice
+-- Process 0 will release a core at t = 80 ms
+-- ARRIVAL event for process 1 at t = 25 ms
+-- Process 1 starts at t = 25 ms
+-- Process 1 requests a core at t = 25 ms for 250 ms
+-- Process 1 gets a core at t = 25 ms
+-- Request of duration 250 exceeds time slice
+-- Process 1 will release a core at t = 105 ms
+-- ARRIVAL event for process 2 at t = 46 ms
+-- Process 2 starts at t = 46 ms
+-- Process 2 requests a core at t = 46 ms for 150 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- ARRIVAL event for process 3 at t = 63 ms
+-- Process 3 starts at t = 63 ms
+-- Process 3 requests a core at t = 63 ms for 250 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 0 at t = 80 ms
+-- Process 2 gets a core at t = 80 ms
+-- Request of duration %d exceeds time slice 150
+-- Process 2 will release a core at t = 160 ms
+-- Process 0 requests a core at t = 80 ms for 70 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 1 at t = 105 ms
+-- Process 3 gets a core at t = 105 ms
+-- Request of duration %d exceeds time slice 250
+-- Process 3 will release a core at t = 185 ms
+-- Process 1 requests a core at t = 105 ms for 170 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 2 at t = 160 ms
+-- Process 0 gets a core at t = 160 ms
+-- Process 0 will release a core at t = 230 ms
+-- Process 2 requests a core at t = 160 ms for 70 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 3 at t = 185 ms
+-- Process 1 gets a core at t = 185 ms
+-- Request of duration %d exceeds time slice 170
+-- Process 1 will release a core at t = 265 ms
+-- Process 3 requests a core at t = 185 ms for 170 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 0 at t = 230 ms
+-- Process 2 gets a core at t = 230 ms
+-- Process 2 will release a core at t = 300 ms
+-- Process 0 requests disk access at t = 230 ms for 7 ms
+-- Process 0 will release the disk at t = 237 ms
+-- DISK completion event for process 0 at t = 237 ms
+-- Process 0 requests a core at t = 237 ms for 20 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 1 at t = 265 ms
+-- Process 3 gets a core at t = 265 ms
+-- Request of duration %d exceeds time slice 170
+-- Process 3 will release a core at t = 345 ms
+-- Process 1 requests a core at t = 265 ms for 90 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 2 at t = 300 ms
+-- Process 0 gets a core at t = 300 ms
+-- Process 0 will release a core at t = 320 ms
+-- Process 2 requests disk access at t = 300 ms for 7 ms
+-- Process 2 will release the disk at t = 307 ms
+-- DISK completion event for process 2 at t = 307 ms
+-- Process 2 requests a core at t = 307 ms for 20 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 0 at t = 320 ms
+-- Process 1 gets a core at t = 320 ms
+-- Request of duration %d exceeds time slice 90
+-- Process 1 will release a core at t = 400 ms
+-- Process 0 requests disk access at t = 320 ms for 0 ms
+-- Process 0 accesses the disk buffer at t = 320 ms
+-- Process 0 requests a core at t = 320 ms for 10 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 3 at t = 345 ms
+-- Process 2 gets a core at t = 345 ms
+-- Process 2 will release a core at t = 365 ms
+-- Process 3 requests a core at t = 345 ms for 90 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 2 at t = 365 ms
+-- Process 0 gets a core at t = 365 ms
+-- Process 0 will release a core at t = 375 ms
+-- Process 2 requests disk access at t = 365 ms for 0 ms
+-- Process 2 accesses the disk buffer at t = 365 ms
+-- Process 2 requests a core at t = 365 ms for 10 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 0 at t = 375 ms
+-- Process 3 gets a core at t = 375 ms
+-- Request of duration %d exceeds time slice 90
+-- Process 3 will release a core at t = 455 ms
+-- Process 0 requests disk access at t = 375 ms for 0 ms
+-- Process 0 accesses the disk buffer at t = 375 ms
+-- Process 0 requests a core at t = 375 ms for 10 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 1 at t = 400 ms
+-- Process 2 gets a core at t = 400 ms
+-- Process 2 will release a core at t = 410 ms
+-- Process 1 requests a core at t = 400 ms for 10 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 2 at t = 410 ms
+-- Process 0 gets a core at t = 410 ms
+-- Process 0 will release a core at t = 420 ms
+-- Process 2 requests disk access at t = 410 ms for 0 ms
+-- Process 2 accesses the disk buffer at t = 410 ms
+-- Process 2 requests a core at t = 410 ms for 10 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 0 at t = 420 ms
+-- Process 1 gets a core at t = 420 ms
+-- Process 1 will release a core at t = 430 ms
+-- Process 0 requests disk access at t = 420 ms for 0 ms
+-- Process 0 accesses the disk buffer at t = 420 ms
+-- Process 0 requests a core at t = 420 ms for 200 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 1 at t = 430 ms
+-- Process 2 gets a core at t = 430 ms
+-- Process 2 will release a core at t = 440 ms
+-- Process 1 requests disk access at t = 430 ms for 8 ms
+-- Process 1 will release the disk at t = 438 ms
+-- DISK completion event for process 1 at t = 438 ms
+-- Process 1 requests a core at t = 438 ms for 30 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 2 at t = 440 ms
+-- Process 0 gets a core at t = 440 ms
+-- Request of duration %d exceeds time slice 200
+-- Process 0 will release a core at t = 520 ms
+-- Process 2 requests disk access at t = 440 ms for 0 ms
+-- Process 2 accesses the disk buffer at t = 440 ms
+-- Process 2 requests a core at t = 440 ms for 100 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 3 at t = 455 ms
+-- Process 1 gets a core at t = 455 ms
+-- Process 1 will release a core at t = 485 ms
+-- Process 3 requests a core at t = 455 ms for 10 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 1 at t = 485 ms
+-- Process 2 gets a core at t = 485 ms
+-- Request of duration %d exceeds time slice 100
+-- Process 2 will release a core at t = 565 ms
+-- Process 1 requests disk access at t = 485 ms for 0 ms
+-- Process 1 accesses the disk buffer at t = 485 ms
+-- Process 1 requests a core at t = 485 ms for 10 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 0 at t = 520 ms
+-- Process 3 gets a core at t = 520 ms
+-- Process 3 will release a core at t = 530 ms
+-- Process 0 requests a core at t = 520 ms for 120 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 3 at t = 530 ms
+-- Process 1 gets a core at t = 530 ms
+-- Process 1 will release a core at t = 540 ms
+-- Process 3 requests disk access at t = 530 ms for 8 ms
+-- Process 3 will release the disk at t = 538 ms
+-- DISK completion event for process 3 at t = 538 ms
+-- Process 3 requests a core at t = 538 ms for 30 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 1 at t = 540 ms
+-- Process 0 gets a core at t = 540 ms
+-- Request of duration %d exceeds time slice 120
+-- Process 0 will release a core at t = 620 ms
+-- Process 1 requests disk access at t = 540 ms for 0 ms
+-- Process 1 accesses the disk buffer at t = 540 ms
+-- Process 1 requests a core at t = 540 ms for 10 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 2 at t = 565 ms
+-- Process 3 gets a core at t = 565 ms
+-- Process 3 will release a core at t = 595 ms
+-- Process 2 requests a core at t = 565 ms for 20 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 3 at t = 595 ms
+-- Process 1 gets a core at t = 595 ms
+-- Process 1 will release a core at t = 605 ms
+-- Process 3 requests disk access at t = 595 ms for 0 ms
+-- Process 3 accesses the disk buffer at t = 595 ms
+-- Process 3 requests a core at t = 595 ms for 10 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 1 at t = 605 ms
+-- Process 2 gets a core at t = 605 ms
+-- Process 2 will release a core at t = 625 ms
+-- Process 1 requests disk access at t = 605 ms for 0 ms
+-- Process 1 accesses the disk buffer at t = 605 ms
+-- Process 1 requests a core at t = 605 ms for 200 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 0 at t = 620 ms
+-- Process 3 gets a core at t = 620 ms
+-- Process 3 will release a core at t = 630 ms
+-- Process 0 requests a core at t = 620 ms for 40 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 2 at t = 625 ms
+-- Process 1 gets a core at t = 625 ms
+-- Request of duration %d exceeds time slice 200
+-- Process 1 will release a core at t = 705 ms
+-- Process 2 starts a DISPLAY or an INPUT at t = 625 ms for 50 ms
+-- CORE completion event for process 3 at t = 630 ms
+-- Process 0 gets a core at t = 630 ms
+-- Process 0 will release a core at t = 670 ms
+-- Process 3 requests disk access at t = 630 ms for 0 ms
+-- Process 3 accesses the disk buffer at t = 630 ms
+-- Process 3 requests a core at t = 630 ms for 10 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- CORE completion event for process 0 at t = 670 ms
+-- Process 3 gets a core at t = 670 ms
+-- Process 3 will release a core at t = 680 ms
+-- Process 0 requests disk access at t = 670 ms for 0 ms
+-- Process 0 accesses the disk buffer at t = 670 ms
+-- Process 0 requests a core at t = 670 ms for 100 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- USER completion event for process 2 at t = 675 ms
+-- Process 2 requests a core at t = 675 ms for 30 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 3 at t = 680 ms
+-- Process 0 gets a core at t = 680 ms
+-- Request of duration %d exceeds time slice 100
+-- Process 0 will release a core at t = 760 ms
+-- Process 3 requests disk access at t = 680 ms for 0 ms
+-- Process 3 accesses the disk buffer at t = 680 ms
+-- Process 3 requests a core at t = 680 ms for 200 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 1 at t = 705 ms
+-- Process 2 gets a core at t = 705 ms
+-- Process 2 will release a core at t = 735 ms
+-- Process 1 requests a core at t = 705 ms for 120 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 2 at t = 735 ms
+-- Process 3 gets a core at t = 735 ms
+-- Request of duration %d exceeds time slice 200
+-- Process 3 will release a core at t = 815 ms
+-- Process 2 starts a DISPLAY or an INPUT at t = 735 ms for 2000 ms
+-- CORE completion event for process 0 at t = 760 ms
+-- Process 1 gets a core at t = 760 ms
+-- Request of duration %d exceeds time slice 120
+-- Process 1 will release a core at t = 840 ms
+-- Process 0 requests a core at t = 760 ms for 20 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- CORE completion event for process 3 at t = 815 ms
+-- Process 0 gets a core at t = 815 ms
+-- Process 0 will release a core at t = 835 ms
+-- Process 3 requests a core at t = 815 ms for 120 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- CORE completion event for process 0 at t = 835 ms
+-- Process 3 gets a core at t = 835 ms
+-- Request of duration %d exceeds time slice 120
+-- Process 3 will release a core at t = 915 ms
+-- Process 0 starts a DISPLAY or an INPUT at t = 835 ms for 50 ms
+-- CORE completion event for process 1 at t = 840 ms
+-- Process 1 requests a core at t = 840 ms for 40 ms
+-- Process 1 gets a core at t = 840 ms
+-- Process 1 will release a core at t = 880 ms
+-- CORE completion event for process 1 at t = 880 ms
+-- Process 1 requests disk access at t = 880 ms for 0 ms
+-- Process 1 accesses the disk buffer at t = 880 ms
+-- Process 1 requests a core at t = 880 ms for 100 ms
+-- Process 1 gets a core at t = 880 ms
+-- Request of duration 100 exceeds time slice
+-- Process 1 will release a core at t = 960 ms
+-- USER completion event for process 0 at t = 885 ms
+-- Process 0 requests a core at t = 885 ms for 30 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- CORE completion event for process 3 at t = 915 ms
+-- Process 0 gets a core at t = 915 ms
+-- Process 0 will release a core at t = 945 ms
+-- Process 3 requests a core at t = 915 ms for 40 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- CORE completion event for process 0 at t = 945 ms
+-- Process 3 gets a core at t = 945 ms
+-- Process 3 will release a core at t = 985 ms
+-- Process 0 starts a DISPLAY or an INPUT at t = 945 ms for 2000 ms
+-- CORE completion event for process 1 at t = 960 ms
+-- Process 1 requests a core at t = 960 ms for 20 ms
+-- Process 1 gets a core at t = 960 ms
+-- Process 1 will release a core at t = 980 ms
+-- CORE completion event for process 1 at t = 980 ms
+-- Process 1 starts a DISPLAY or an INPUT at t = 980 ms for 50 ms
+-- CORE completion event for process 3 at t = 985 ms
+-- Process 3 requests disk access at t = 985 ms for 0 ms
+-- Process 3 accesses the disk buffer at t = 985 ms
+-- Process 3 requests a core at t = 985 ms for 100 ms
+-- Process 3 gets a core at t = 985 ms
+-- Request of duration 100 exceeds time slice
+-- Process 3 will release a core at t = 1065 ms
+-- USER completion event for process 1 at t = 1030 ms
+-- Process 1 requests a core at t = 1030 ms for 20 ms
+-- Process 1 gets a core at t = 1030 ms
+-- Process 1 will release a core at t = 1050 ms
+-- CORE completion event for process 1 at t = 1050 ms
+-- Process 1 starts a DISPLAY or an INPUT at t = 1050 ms for 1500 ms
+-- CORE completion event for process 3 at t = 1065 ms
+-- Process 3 requests a core at t = 1065 ms for 20 ms
+-- Process 3 gets a core at t = 1065 ms
+-- Process 3 will release a core at t = 1085 ms
+-- CORE completion event for process 3 at t = 1085 ms
+-- Process 3 starts a DISPLAY or an INPUT at t = 1085 ms for 50 ms
+-- USER completion event for process 3 at t = 1135 ms
+-- Process 3 requests a core at t = 1135 ms for 20 ms
+-- Process 3 gets a core at t = 1135 ms
+-- Process 3 will release a core at t = 1155 ms
+-- CORE completion event for process 3 at t = 1155 ms
+-- Process 3 starts a DISPLAY or an INPUT at t = 1155 ms for 1500 ms
+-- USER completion event for process 1 at t = 2550 ms
+-- Process 1 requests a core at t = 2550 ms for 400 ms
+-- Process 1 gets a core at t = 2550 ms
+-- Request of duration 400 exceeds time slice
+-- Process 1 will release a core at t = 2630 ms
+-- CORE completion event for process 1 at t = 2630 ms
+-- Process 1 requests a core at t = 2630 ms for 320 ms
+-- Process 1 gets a core at t = 2630 ms
+-- Request of duration 320 exceeds time slice
+-- Process 1 will release a core at t = 2710 ms
+-- USER completion event for process 3 at t = 2655 ms
+-- Process 3 requests a core at t = 2655 ms for 400 ms
+-- Process 3 gets a core at t = 2655 ms
+-- Request of duration 400 exceeds time slice
+-- Process 3 will release a core at t = 2735 ms
+-- CORE completion event for process 1 at t = 2710 ms
+-- Process 1 requests a core at t = 2710 ms for 240 ms
+-- Process 1 gets a core at t = 2710 ms
+-- Request of duration 240 exceeds time slice
+-- Process 1 will release a core at t = 2790 ms
+-- CORE completion event for process 3 at t = 2735 ms
+-- Process 3 requests a core at t = 2735 ms for 320 ms
+-- Process 3 gets a core at t = 2735 ms
+-- Request of duration 320 exceeds time slice
+-- Process 3 will release a core at t = 2815 ms
+-- USER completion event for process 2 at t = 2735 ms
+-- Process 2 requests a core at t = 2735 ms for 500 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- CORE completion event for process 1 at t = 2790 ms
+-- Process 2 gets a core at t = 2790 ms
+-- Request of duration %d exceeds time slice 500
+-- Process 2 will release a core at t = 2870 ms
+-- Process 1 requests a core at t = 2790 ms for 160 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- CORE completion event for process 3 at t = 2815 ms
+-- Process 1 gets a core at t = 2815 ms
+-- Request of duration %d exceeds time slice 160
+-- Process 1 will release a core at t = 2895 ms
+-- Process 3 requests a core at t = 2815 ms for 240 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- CORE completion event for process 2 at t = 2870 ms
+-- Process 3 gets a core at t = 2870 ms
+-- Request of duration %d exceeds time slice 240
+-- Process 3 will release a core at t = 2950 ms
+-- Process 2 requests a core at t = 2870 ms for 420 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- CORE completion event for process 1 at t = 2895 ms
+-- Process 2 gets a core at t = 2895 ms
+-- Request of duration %d exceeds time slice 420
+-- Process 2 will release a core at t = 2975 ms
+-- Process 1 requests a core at t = 2895 ms for 80 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- USER completion event for process 0 at t = 2945 ms
+-- Process 0 requests a core at t = 2945 ms for 500 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 3 at t = 2950 ms
+-- Process 1 gets a core at t = 2950 ms
+-- Process 1 will release a core at t = 3030 ms
+-- Process 3 requests a core at t = 2950 ms for 160 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 2 at t = 2975 ms
+-- Process 0 gets a core at t = 2975 ms
+-- Request of duration %d exceeds time slice 500
+-- Process 0 will release a core at t = 3055 ms
+-- Process 2 requests a core at t = 2975 ms for 340 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 1 at t = 3030 ms
+-- Process 3 gets a core at t = 3030 ms
+-- Request of duration %d exceeds time slice 160
+-- Process 3 will release a core at t = 3110 ms
+-- Process 1 requests disk access at t = 3030 ms for 0 ms
+-- Process 1 accesses the disk buffer at t = 3030 ms
+-- Process 1 requests a core at t = 3030 ms for 10 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 0 at t = 3055 ms
+-- Process 2 gets a core at t = 3055 ms
+-- Request of duration %d exceeds time slice 340
+-- Process 2 will release a core at t = 3135 ms
+-- Process 0 requests a core at t = 3055 ms for 420 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 3 at t = 3110 ms
+-- Process 1 gets a core at t = 3110 ms
+-- Process 1 will release a core at t = 3120 ms
+-- Process 3 requests a core at t = 3110 ms for 80 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 1 at t = 3120 ms
+-- Process 0 gets a core at t = 3120 ms
+-- Request of duration %d exceeds time slice 420
+-- Process 0 will release a core at t = 3200 ms
+-- Process 1 requests disk access at t = 3120 ms for 0 ms
+-- Process 1 accesses the disk buffer at t = 3120 ms
+-- Process 1 requests a core at t = 3120 ms for 10 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 2 at t = 3135 ms
+-- Process 3 gets a core at t = 3135 ms
+-- Process 3 will release a core at t = 3215 ms
+-- Process 2 requests a core at t = 3135 ms for 260 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 0 at t = 3200 ms
+-- Process 1 gets a core at t = 3200 ms
+-- Process 1 will release a core at t = 3210 ms
+-- Process 0 requests a core at t = 3200 ms for 340 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 1 at t = 3210 ms
+-- Process 2 gets a core at t = 3210 ms
+-- Request of duration %d exceeds time slice 260
+-- Process 2 will release a core at t = 3290 ms
+-- Process 1 requests disk access at t = 3210 ms for 0 ms
+-- Process 1 accesses the disk buffer at t = 3210 ms
+-- Process 1 requests a core at t = 3210 ms for 240 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 3 at t = 3215 ms
+-- Process 0 gets a core at t = 3215 ms
+-- Request of duration %d exceeds time slice 340
+-- Process 0 will release a core at t = 3295 ms
+-- Process 3 requests disk access at t = 3215 ms for 0 ms
+-- Process 3 accesses the disk buffer at t = 3215 ms
+-- Process 3 requests a core at t = 3215 ms for 10 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 2 at t = 3290 ms
+-- Process 1 gets a core at t = 3290 ms
+-- Request of duration %d exceeds time slice 240
+-- Process 1 will release a core at t = 3370 ms
+-- Process 2 requests a core at t = 3290 ms for 180 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 0 at t = 3295 ms
+-- Process 3 gets a core at t = 3295 ms
+-- Process 3 will release a core at t = 3305 ms
+-- Process 0 requests a core at t = 3295 ms for 260 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 3 at t = 3305 ms
+-- Process 2 gets a core at t = 3305 ms
+-- Request of duration %d exceeds time slice 180
+-- Process 2 will release a core at t = 3385 ms
+-- Process 3 requests disk access at t = 3305 ms for 0 ms
+-- Process 3 accesses the disk buffer at t = 3305 ms
+-- Process 3 requests a core at t = 3305 ms for 10 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 1 at t = 3370 ms
+-- Process 0 gets a core at t = 3370 ms
+-- Request of duration %d exceeds time slice 260
+-- Process 0 will release a core at t = 3450 ms
+-- Process 1 requests a core at t = 3370 ms for 160 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 2 at t = 3385 ms
+-- Process 3 gets a core at t = 3385 ms
+-- Process 3 will release a core at t = 3395 ms
+-- Process 2 requests a core at t = 3385 ms for 100 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 3 at t = 3395 ms
+-- Process 1 gets a core at t = 3395 ms
+-- Request of duration %d exceeds time slice 160
+-- Process 1 will release a core at t = 3475 ms
+-- Process 3 requests disk access at t = 3395 ms for 0 ms
+-- Process 3 accesses the disk buffer at t = 3395 ms
+-- Process 3 requests a core at t = 3395 ms for 240 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 0 at t = 3450 ms
+-- Process 2 gets a core at t = 3450 ms
+-- Request of duration %d exceeds time slice 100
+-- Process 2 will release a core at t = 3530 ms
+-- Process 0 requests a core at t = 3450 ms for 180 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 1 at t = 3475 ms
+-- Process 3 gets a core at t = 3475 ms
+-- Request of duration %d exceeds time slice 240
+-- Process 3 will release a core at t = 3555 ms
+-- Process 1 requests a core at t = 3475 ms for 80 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 2 at t = 3530 ms
+-- Process 0 gets a core at t = 3530 ms
+-- Request of duration %d exceeds time slice 180
+-- Process 0 will release a core at t = 3610 ms
+-- Process 2 requests a core at t = 3530 ms for 20 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 3 at t = 3555 ms
+-- Process 1 gets a core at t = 3555 ms
+-- Process 1 will release a core at t = 3635 ms
+-- Process 3 requests a core at t = 3555 ms for 160 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 0 at t = 3610 ms
+-- Process 2 gets a core at t = 3610 ms
+-- Process 2 will release a core at t = 3630 ms
+-- Process 0 requests a core at t = 3610 ms for 100 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 2 at t = 3630 ms
+-- Process 3 gets a core at t = 3630 ms
+-- Request of duration %d exceeds time slice 160
+-- Process 3 will release a core at t = 3710 ms
+-- Process 2 requests disk access at t = 3630 ms for 0 ms
+-- Process 2 accesses the disk buffer at t = 3630 ms
+-- Process 2 requests a core at t = 3630 ms for 10 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 1 at t = 3635 ms
+-- Process 0 gets a core at t = 3635 ms
+-- Request of duration %d exceeds time slice 100
+-- Process 0 will release a core at t = 3715 ms
+-- Process 1 requests disk access at t = 3635 ms for 0 ms
+-- Process 1 accesses the disk buffer at t = 3635 ms
+-- Process 1 requests a core at t = 3635 ms for 100 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 3 at t = 3710 ms
+-- Process 2 gets a core at t = 3710 ms
+-- Process 2 will release a core at t = 3720 ms
+-- Process 3 requests a core at t = 3710 ms for 80 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 0 at t = 3715 ms
+-- Process 1 gets a core at t = 3715 ms
+-- Request of duration %d exceeds time slice 100
+-- Process 1 will release a core at t = 3795 ms
+-- Process 0 requests a core at t = 3715 ms for 20 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 2 at t = 3720 ms
+-- Process 3 gets a core at t = 3720 ms
+-- Process 3 will release a core at t = 3800 ms
+-- Process 2 requests disk access at t = 3720 ms for 0 ms
+-- Process 2 accesses the disk buffer at t = 3720 ms
+-- Process 2 requests a core at t = 3720 ms for 10 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 1 at t = 3795 ms
+-- Process 0 gets a core at t = 3795 ms
+-- Process 0 will release a core at t = 3815 ms
+-- Process 1 requests a core at t = 3795 ms for 20 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 3 at t = 3800 ms
+-- Process 2 gets a core at t = 3800 ms
+-- Process 2 will release a core at t = 3810 ms
+-- Process 3 requests disk access at t = 3800 ms for 0 ms
+-- Process 3 accesses the disk buffer at t = 3800 ms
+-- Process 3 requests a core at t = 3800 ms for 100 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 2 at t = 3810 ms
+-- Process 1 gets a core at t = 3810 ms
+-- Process 1 will release a core at t = 3830 ms
+-- Process 2 requests disk access at t = 3810 ms for 0 ms
+-- Process 2 accesses the disk buffer at t = 3810 ms
+-- Process 2 requests a core at t = 3810 ms for 200 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 0 at t = 3815 ms
+-- Process 3 gets a core at t = 3815 ms
+-- Request of duration %d exceeds time slice 100
+-- Process 3 will release a core at t = 3895 ms
+-- Process 0 requests disk access at t = 3815 ms for 0 ms
+-- Process 0 accesses the disk buffer at t = 3815 ms
+-- Process 0 requests a core at t = 3815 ms for 10 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 1 at t = 3830 ms
+-- Process 2 gets a core at t = 3830 ms
+-- Request of duration %d exceeds time slice 200
+-- Process 2 will release a core at t = 3910 ms
+-- Process 1 requests disk access at t = 3830 ms for 7 ms
+-- Process 1 will release the disk at t = 3837 ms
+-- DISK completion event for process 1 at t = 3837 ms
+-- Process 1 requests a core at t = 3837 ms for 70 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 3 at t = 3895 ms
+-- Process 0 gets a core at t = 3895 ms
+-- Process 0 will release a core at t = 3905 ms
+-- Process 3 requests a core at t = 3895 ms for 20 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 0 at t = 3905 ms
+-- Process 1 gets a core at t = 3905 ms
+-- Process 1 will release a core at t = 3975 ms
+-- Process 0 requests disk access at t = 3905 ms for 0 ms
+-- Process 0 accesses the disk buffer at t = 3905 ms
+-- Process 0 requests a core at t = 3905 ms for 10 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 2 at t = 3910 ms
+-- Process 3 gets a core at t = 3910 ms
+-- Process 3 will release a core at t = 3930 ms
+-- Process 2 requests a core at t = 3910 ms for 120 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 3 at t = 3930 ms
+-- Process 0 gets a core at t = 3930 ms
+-- Process 0 will release a core at t = 3940 ms
+-- Process 3 requests disk access at t = 3930 ms for 7 ms
+-- Process 3 will release the disk at t = 3937 ms
+-- DISK completion event for process 3 at t = 3937 ms
+-- Process 3 requests a core at t = 3937 ms for 70 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 0 at t = 3940 ms
+-- Process 2 gets a core at t = 3940 ms
+-- Request of duration %d exceeds time slice 120
+-- Process 2 will release a core at t = 4020 ms
+-- Process 0 requests disk access at t = 3940 ms for 0 ms
+-- Process 0 accesses the disk buffer at t = 3940 ms
+-- Process 0 requests a core at t = 3940 ms for 200 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 1 at t = 3975 ms
+-- Process 3 gets a core at t = 3975 ms
+-- Process 3 will release a core at t = 4045 ms
+-- Process 1 starts a DISPLAY or an INPUT at t = 3975 ms for 50 ms
+-- CORE completion event for process 2 at t = 4020 ms
+-- Process 0 gets a core at t = 4020 ms
+-- Request of duration %d exceeds time slice 200
+-- Process 0 will release a core at t = 4100 ms
+-- Process 2 requests a core at t = 4020 ms for 40 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- USER completion event for process 1 at t = 4025 ms
+-- Process 1 requests a core at t = 4025 ms for 30 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 3 at t = 4045 ms
+-- Process 2 gets a core at t = 4045 ms
+-- Process 2 will release a core at t = 4085 ms
+-- Process 3 starts a DISPLAY or an INPUT at t = 4045 ms for 50 ms
+-- CORE completion event for process 2 at t = 4085 ms
+-- Process 1 gets a core at t = 4085 ms
+-- Process 1 will release a core at t = 4115 ms
+-- Process 2 requests disk access at t = 4085 ms for 0 ms
+-- Process 2 accesses the disk buffer at t = 4085 ms
+-- Process 2 requests a core at t = 4085 ms for 100 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- USER completion event for process 3 at t = 4095 ms
+-- Process 3 requests a core at t = 4095 ms for 30 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 0 at t = 4100 ms
+-- Process 2 gets a core at t = 4100 ms
+-- Request of duration %d exceeds time slice 100
+-- Process 2 will release a core at t = 4180 ms
+-- Process 0 requests a core at t = 4100 ms for 120 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 1 at t = 4115 ms
+-- Process 3 gets a core at t = 4115 ms
+-- Process 3 will release a core at t = 4145 ms
+-- Process 1 starts a DISPLAY or an INPUT at t = 4115 ms for 50 ms
+-- CORE completion event for process 3 at t = 4145 ms
+-- Process 0 gets a core at t = 4145 ms
+-- Request of duration %d exceeds time slice 120
+-- Process 0 will release a core at t = 4225 ms
+-- Process 3 starts a DISPLAY or an INPUT at t = 4145 ms for 50 ms
+-- USER completion event for process 1 at t = 4165 ms
+-- Process 1 requests a core at t = 4165 ms for 30 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- CORE completion event for process 2 at t = 4180 ms
+-- Process 1 gets a core at t = 4180 ms
+-- Process 1 will release a core at t = 4210 ms
+-- Process 2 requests a core at t = 4180 ms for 20 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- USER completion event for process 3 at t = 4195 ms
+-- Process 3 requests a core at t = 4195 ms for 30 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 2 ready process(es)
+-- CORE completion event for process 1 at t = 4210 ms
+-- Process 2 gets a core at t = 4210 ms
+-- Process 2 will release a core at t = 4230 ms
+-- Process 1 terminates at t = 4210 ms
+ 
+CURRENT STATE OF THE SYSTEM AT t = 4210 ms:
+Current number of busy cores: 2 
+READY QUEUE:
+Process 3
+DISK QUEUE:
+empty
+PROCESS TABLE:
+Process 0 started at 0 ms and is RUNNING
+Process 1 started at 25 ms and is TERMINATED
+Process 2 started at 46 ms and is RUNNING
+Process 3 started at 63 ms and is READY
+ 
+-- CORE completion event for process 0 at t = 4225 ms
+-- Process 3 gets a core at t = 4225 ms
+-- Process 3 will release a core at t = 4255 ms
+-- Process 0 requests a core at t = 4225 ms for 40 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- CORE completion event for process 2 at t = 4230 ms
+-- Process 0 gets a core at t = 4230 ms
+-- Process 0 will release a core at t = 4270 ms
+-- Process 2 requests disk access at t = 4230 ms for 7 ms
+-- Process 2 will release the disk at t = 4237 ms
+-- DISK completion event for process 2 at t = 4237 ms
+-- Process 2 requests a core at t = 4237 ms for 70 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- CORE completion event for process 3 at t = 4255 ms
+-- Process 2 gets a core at t = 4255 ms
+-- Process 2 will release a core at t = 4325 ms
+-- Process 3 terminates at t = 4255 ms
+ 
+CURRENT STATE OF THE SYSTEM AT t = 4255 ms:
+Current number of busy cores: 2 
+READY QUEUE:
+empty
+DISK QUEUE:
+empty
+PROCESS TABLE:
+Process 0 started at 0 ms and is RUNNING
+Process 2 started at 46 ms and is RUNNING
+Process 3 started at 63 ms and is TERMINATED
+ 
+-- CORE completion event for process 0 at t = 4270 ms
+-- Process 0 requests disk access at t = 4270 ms for 0 ms
+-- Process 0 accesses the disk buffer at t = 4270 ms
+-- Process 0 requests a core at t = 4270 ms for 100 ms
+-- Process 0 gets a core at t = 4270 ms
+-- Request of duration 100 exceeds time slice
+-- Process 0 will release a core at t = 4350 ms
+-- CORE completion event for process 2 at t = 4325 ms
+-- Process 2 starts a DISPLAY or an INPUT at t = 4325 ms for 50 ms
+-- CORE completion event for process 0 at t = 4350 ms
+-- Process 0 requests a core at t = 4350 ms for 20 ms
+-- Process 0 gets a core at t = 4350 ms
+-- Process 0 will release a core at t = 4370 ms
+-- CORE completion event for process 0 at t = 4370 ms
+-- Process 0 requests disk access at t = 4370 ms for 7 ms
+-- Process 0 will release the disk at t = 4377 ms
+-- USER completion event for process 2 at t = 4375 ms
+-- Process 2 requests a core at t = 4375 ms for 30 ms
+-- Process 2 gets a core at t = 4375 ms
+-- Process 2 will release a core at t = 4405 ms
+-- DISK completion event for process 0 at t = 4377 ms
+-- Process 0 requests a core at t = 4377 ms for 70 ms
+-- Process 0 gets a core at t = 4377 ms
+-- Process 0 will release a core at t = 4447 ms
+-- CORE completion event for process 2 at t = 4405 ms
+-- Process 2 starts a DISPLAY or an INPUT at t = 4405 ms for 50 ms
+-- CORE completion event for process 0 at t = 4447 ms
+-- Process 0 starts a DISPLAY or an INPUT at t = 4447 ms for 50 ms
+-- USER completion event for process 2 at t = 4455 ms
+-- Process 2 requests a core at t = 4455 ms for 30 ms
+-- Process 2 gets a core at t = 4455 ms
+-- Process 2 will release a core at t = 4485 ms
+-- CORE completion event for process 2 at t = 4485 ms
+-- Process 2 terminates at t = 4485 ms
+ 
+CURRENT STATE OF THE SYSTEM AT t = 4485 ms:
+Current number of busy cores: 0 
+READY QUEUE:
+empty
+DISK QUEUE:
+empty
+PROCESS TABLE:
+Process 0 started at 0 ms and is BLOCKED
+Process 2 started at 46 ms and is TERMINATED
+ 
+-- USER completion event for process 0 at t = 4497 ms
+-- Process 0 requests a core at t = 4497 ms for 30 ms
+-- Process 0 gets a core at t = 4497 ms
+-- Process 0 will release a core at t = 4527 ms
+-- CORE completion event for process 0 at t = 4527 ms
+-- Process 0 starts a DISPLAY or an INPUT at t = 4527 ms for 50 ms
+-- USER completion event for process 0 at t = 4577 ms
+-- Process 0 requests a core at t = 4577 ms for 30 ms
+-- Process 0 gets a core at t = 4577 ms
+-- Process 0 will release a core at t = 4607 ms
+-- CORE completion event for process 0 at t = 4607 ms
+-- Process 0 terminates at t = 4607 ms
+ 
+CURRENT STATE OF THE SYSTEM AT t = 4607 ms:
+Current number of busy cores: 0 
+READY QUEUE:
+empty
+DISK QUEUE:
+empty
+PROCESS TABLE:
+Process 0 started at 0 ms and is TERMINATED
+ 

@@ -1,0 +1,266 @@
+-- WARNING: All output lines starting with a double dash are there to explain
+-- in detail how the simulation proceeds and are NOT REQUIRED.
+
+-- ARRIVAL event for process 0 at t = 0 ms
+-- Process 0 starts at t = 0 ms
+-- Process 0 requests a core at t = 0 ms for 50 ms
+-- Process 0 gets a core at t = 0 ms
+-- Process 0 will release a core at t = 50 ms
+-- ARRIVAL event for process 1 at t = 22 ms
+-- Process 1 starts at t = 22 ms
+-- Process 1 requests a core at t = 22 ms for 50 ms
+-- Process 1 gets a core at t = 22 ms
+-- Process 1 will release a core at t = 72 ms
+-- ARRIVAL event for process 2 at t = 41 ms
+-- Process 2 starts at t = 41 ms
+-- Process 2 requests a core at t = 41 ms for 80 ms
+-- Process 2 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- CORE completion event for process 0 at t = 50 ms
+-- Process 2 gets a core at t = 50 ms
+-- Process 2 will release a core at t = 130 ms
+-- Process 0 starts a DISPLAY or an INPUT at t = 50 ms for 70 ms
+-- ARRIVAL event for process 3 at t = 58 ms
+-- Process 3 starts at t = 58 ms
+-- Process 3 requests a core at t = 58 ms for 40 ms
+-- Process 3 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- CORE completion event for process 1 at t = 72 ms
+-- Process 3 gets a core at t = 72 ms
+-- Process 3 will release a core at t = 112 ms
+-- Process 1 starts a DISPLAY or an INPUT at t = 72 ms for 80 ms
+-- CORE completion event for process 3 at t = 112 ms
+-- Process 3 starts a DISPLAY or an INPUT at t = 112 ms for 90 ms
+-- USER completion event for process 0 at t = 120 ms
+-- Process 0 requests a core at t = 120 ms for 20 ms
+-- Process 0 gets a core at t = 120 ms
+-- Process 0 will release a core at t = 140 ms
+-- CORE completion event for process 2 at t = 130 ms
+-- Process 2 requests disk access at t = 130 ms for 7 ms
+-- Process 2 will release the disk at t = 137 ms
+-- DISK completion event for process 2 at t = 137 ms
+-- Process 2 requests a core at t = 137 ms for 80 ms
+-- Process 2 gets a core at t = 137 ms
+-- Process 2 will release a core at t = 217 ms
+-- CORE completion event for process 0 at t = 140 ms
+-- Process 0 starts a DISPLAY or an INPUT at t = 140 ms for 900 ms
+-- USER completion event for process 1 at t = 152 ms
+-- Process 1 requests a core at t = 152 ms for 20 ms
+-- Process 1 gets a core at t = 152 ms
+-- Process 1 will release a core at t = 172 ms
+-- CORE completion event for process 1 at t = 172 ms
+-- Process 1 starts a DISPLAY or an INPUT at t = 172 ms for 800 ms
+-- USER completion event for process 3 at t = 202 ms
+-- Process 3 requests a core at t = 202 ms for 20 ms
+-- Process 3 gets a core at t = 202 ms
+-- Process 3 will release a core at t = 222 ms
+-- CORE completion event for process 2 at t = 217 ms
+-- Process 2 requests disk access at t = 217 ms for 7 ms
+-- Process 2 will release the disk at t = 224 ms
+-- CORE completion event for process 3 at t = 222 ms
+-- Process 3 starts a DISPLAY or an INPUT at t = 222 ms for 1200 ms
+-- DISK completion event for process 2 at t = 224 ms
+-- Process 2 requests a core at t = 224 ms for 80 ms
+-- Process 2 gets a core at t = 224 ms
+-- Process 2 will release a core at t = 304 ms
+-- CORE completion event for process 2 at t = 304 ms
+-- Process 2 requests disk access at t = 304 ms for 7 ms
+-- Process 2 will release the disk at t = 311 ms
+-- DISK completion event for process 2 at t = 311 ms
+-- Process 2 requests a core at t = 311 ms for 80 ms
+-- Process 2 gets a core at t = 311 ms
+-- Process 2 will release a core at t = 391 ms
+-- CORE completion event for process 2 at t = 391 ms
+-- Process 2 requests disk access at t = 391 ms for 7 ms
+-- Process 2 will release the disk at t = 398 ms
+-- DISK completion event for process 2 at t = 398 ms
+-- Process 2 requests a core at t = 398 ms for 10 ms
+-- Process 2 gets a core at t = 398 ms
+-- Process 2 will release a core at t = 408 ms
+-- CORE completion event for process 2 at t = 408 ms
+-- Process 2 requests disk access at t = 408 ms for 7 ms
+-- Process 2 will release the disk at t = 415 ms
+-- DISK completion event for process 2 at t = 415 ms
+-- Process 2 requests a core at t = 415 ms for 10 ms
+-- Process 2 gets a core at t = 415 ms
+-- Process 2 will release a core at t = 425 ms
+-- CORE completion event for process 2 at t = 425 ms
+-- Process 2 starts a DISPLAY or an INPUT at t = 425 ms for 80 ms
+-- USER completion event for process 2 at t = 505 ms
+-- Process 2 requests a core at t = 505 ms for 20 ms
+-- Process 2 gets a core at t = 505 ms
+-- Process 2 will release a core at t = 525 ms
+-- CORE completion event for process 2 at t = 525 ms
+-- Process 2 terminates at t = 525 ms
+ 
+CURRENT STATE OF THE SYSTEM AT t = 525 ms:
+Current number of busy cores: 0 
+READY QUEUE:
+empty
+DISK QUEUE:
+empty
+PROCESS TABLE:
+Process 0 started at 0 ms and is BLOCKED
+Process 1 started at 22 ms and is BLOCKED
+Process 2 started at 41 ms and is TERMINATED
+Process 3 started at 58 ms and is BLOCKED
+ 
+-- USER completion event for process 1 at t = 972 ms
+-- Process 1 requests a core at t = 972 ms for 90 ms
+-- Process 1 gets a core at t = 972 ms
+-- Process 1 will release a core at t = 1062 ms
+-- USER completion event for process 0 at t = 1040 ms
+-- Process 0 requests a core at t = 1040 ms for 135 ms
+-- Process 0 gets a core at t = 1040 ms
+-- Request of duration 135 exceeds time slice
+-- Process 0 will release a core at t = 1140 ms
+-- CORE completion event for process 1 at t = 1062 ms
+-- Process 1 requests disk access at t = 1062 ms for 7 ms
+-- Process 1 will release the disk at t = 1069 ms
+-- DISK completion event for process 1 at t = 1069 ms
+-- Process 1 requests a core at t = 1069 ms for 80 ms
+-- Process 1 gets a core at t = 1069 ms
+-- Process 1 will release a core at t = 1149 ms
+-- CORE completion event for process 0 at t = 1140 ms
+-- Process 0 requests a core at t = 1140 ms for 35 ms
+-- Process 0 gets a core at t = 1140 ms
+-- Process 0 will release a core at t = 1175 ms
+-- CORE completion event for process 1 at t = 1149 ms
+-- Process 1 requests disk access at t = 1149 ms for 7 ms
+-- Process 1 will release the disk at t = 1156 ms
+-- DISK completion event for process 1 at t = 1156 ms
+-- Process 1 requests a core at t = 1156 ms for 90 ms
+-- Process 1 gets a core at t = 1156 ms
+-- Process 1 will release a core at t = 1246 ms
+-- CORE completion event for process 0 at t = 1175 ms
+-- Process 0 requests disk access at t = 1175 ms for 7 ms
+-- Process 0 will release the disk at t = 1182 ms
+-- DISK completion event for process 0 at t = 1182 ms
+-- Process 0 requests a core at t = 1182 ms for 50 ms
+-- Process 0 gets a core at t = 1182 ms
+-- Process 0 will release a core at t = 1232 ms
+-- CORE completion event for process 0 at t = 1232 ms
+-- Process 0 requests disk access at t = 1232 ms for 7 ms
+-- Process 0 will release the disk at t = 1239 ms
+-- DISK completion event for process 0 at t = 1239 ms
+-- Process 0 requests a core at t = 1239 ms for 50 ms
+-- Process 0 gets a core at t = 1239 ms
+-- Process 0 will release a core at t = 1289 ms
+-- CORE completion event for process 1 at t = 1246 ms
+-- Process 1 requests disk access at t = 1246 ms for 7 ms
+-- Process 1 will release the disk at t = 1253 ms
+-- DISK completion event for process 1 at t = 1253 ms
+-- Process 1 requests a core at t = 1253 ms for 80 ms
+-- Process 1 gets a core at t = 1253 ms
+-- Process 1 will release a core at t = 1333 ms
+-- CORE completion event for process 0 at t = 1289 ms
+-- Process 0 requests disk access at t = 1289 ms for 7 ms
+-- Process 0 will release the disk at t = 1296 ms
+-- DISK completion event for process 0 at t = 1296 ms
+-- Process 0 requests a core at t = 1296 ms for 50 ms
+-- Process 0 gets a core at t = 1296 ms
+-- Process 0 will release a core at t = 1346 ms
+-- CORE completion event for process 1 at t = 1333 ms
+-- Process 1 requests disk access at t = 1333 ms for 7 ms
+-- Process 1 will release the disk at t = 1340 ms
+-- DISK completion event for process 1 at t = 1340 ms
+-- Process 1 requests a core at t = 1340 ms for 10 ms
+-- Process 1 gets a core at t = 1340 ms
+-- Process 1 will release a core at t = 1350 ms
+-- CORE completion event for process 0 at t = 1346 ms
+-- Process 0 terminates at t = 1346 ms
+ 
+CURRENT STATE OF THE SYSTEM AT t = 1346 ms:
+Current number of busy cores: 1 
+READY QUEUE:
+empty
+DISK QUEUE:
+empty
+PROCESS TABLE:
+Process 0 started at 0 ms and is TERMINATED
+Process 1 started at 22 ms and is RUNNING
+Process 3 started at 58 ms and is BLOCKED
+ 
+-- CORE completion event for process 1 at t = 1350 ms
+-- Process 1 requests disk access at t = 1350 ms for 7 ms
+-- Process 1 will release the disk at t = 1357 ms
+-- DISK completion event for process 1 at t = 1357 ms
+-- Process 1 requests a core at t = 1357 ms for 10 ms
+-- Process 1 gets a core at t = 1357 ms
+-- Process 1 will release a core at t = 1367 ms
+-- CORE completion event for process 1 at t = 1367 ms
+-- Process 1 starts a DISPLAY or an INPUT at t = 1367 ms for 50 ms
+-- USER completion event for process 1 at t = 1417 ms
+-- Process 1 requests a core at t = 1417 ms for 30 ms
+-- Process 1 gets a core at t = 1417 ms
+-- Process 1 will release a core at t = 1447 ms
+-- USER completion event for process 3 at t = 1422 ms
+-- Process 3 requests a core at t = 1422 ms for 80 ms
+-- Process 3 gets a core at t = 1422 ms
+-- Process 3 will release a core at t = 1502 ms
+-- CORE completion event for process 1 at t = 1447 ms
+-- Process 1 terminates at t = 1447 ms
+ 
+CURRENT STATE OF THE SYSTEM AT t = 1447 ms:
+Current number of busy cores: 1 
+READY QUEUE:
+empty
+DISK QUEUE:
+empty
+PROCESS TABLE:
+Process 1 started at 22 ms and is TERMINATED
+Process 3 started at 58 ms and is RUNNING
+ 
+-- CORE completion event for process 3 at t = 1502 ms
+-- Process 3 requests disk access at t = 1502 ms for 7 ms
+-- Process 3 will release the disk at t = 1509 ms
+-- DISK completion event for process 3 at t = 1509 ms
+-- Process 3 requests a core at t = 1509 ms for 80 ms
+-- Process 3 gets a core at t = 1509 ms
+-- Process 3 will release a core at t = 1589 ms
+-- CORE completion event for process 3 at t = 1589 ms
+-- Process 3 requests disk access at t = 1589 ms for 7 ms
+-- Process 3 will release the disk at t = 1596 ms
+-- DISK completion event for process 3 at t = 1596 ms
+-- Process 3 requests a core at t = 1596 ms for 80 ms
+-- Process 3 gets a core at t = 1596 ms
+-- Process 3 will release a core at t = 1676 ms
+-- CORE completion event for process 3 at t = 1676 ms
+-- Process 3 requests disk access at t = 1676 ms for 7 ms
+-- Process 3 will release the disk at t = 1683 ms
+-- DISK completion event for process 3 at t = 1683 ms
+-- Process 3 requests a core at t = 1683 ms for 80 ms
+-- Process 3 gets a core at t = 1683 ms
+-- Process 3 will release a core at t = 1763 ms
+-- CORE completion event for process 3 at t = 1763 ms
+-- Process 3 requests disk access at t = 1763 ms for 7 ms
+-- Process 3 will release the disk at t = 1770 ms
+-- DISK completion event for process 3 at t = 1770 ms
+-- Process 3 requests a core at t = 1770 ms for 10 ms
+-- Process 3 gets a core at t = 1770 ms
+-- Process 3 will release a core at t = 1780 ms
+-- CORE completion event for process 3 at t = 1780 ms
+-- Process 3 requests disk access at t = 1780 ms for 7 ms
+-- Process 3 will release the disk at t = 1787 ms
+-- DISK completion event for process 3 at t = 1787 ms
+-- Process 3 requests a core at t = 1787 ms for 10 ms
+-- Process 3 gets a core at t = 1787 ms
+-- Process 3 will release a core at t = 1797 ms
+-- CORE completion event for process 3 at t = 1797 ms
+-- Process 3 starts a DISPLAY or an INPUT at t = 1797 ms for 80 ms
+-- USER completion event for process 3 at t = 1877 ms
+-- Process 3 requests a core at t = 1877 ms for 20 ms
+-- Process 3 gets a core at t = 1877 ms
+-- Process 3 will release a core at t = 1897 ms
+-- CORE completion event for process 3 at t = 1897 ms
+-- Process 3 terminates at t = 1897 ms
+ 
+CURRENT STATE OF THE SYSTEM AT t = 1897 ms:
+Current number of busy cores: 0 
+READY QUEUE:
+empty
+DISK QUEUE:
+empty
+PROCESS TABLE:
+Process 3 started at 58 ms and is TERMINATED
+ 

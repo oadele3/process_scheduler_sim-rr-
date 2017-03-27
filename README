@@ -1,0 +1,7 @@
+Read Me File
+
+1.  Compile code with the command below:
+        gcc assignment1.c -std=c99 -o assignment1
+
+2.  execute using the command:
+        ./assignment1 < input11.txt

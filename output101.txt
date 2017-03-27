@@ -1,0 +1,88 @@
+-- WARNING: All output lines starting with a double dash are there to explain
+-- in detail how the simulation proceeds and are NOT REQUIRED.
+
+-- ARRIVAL event for process 0 at t = 0 ms
+-- Process 0 starts at t = 0 ms
+-- Process 0 requests a core at t = 0 ms for 150 ms
+-- Process 0 gets a core at t = 0 ms
+-- Request of duration 150 exceeds time slice
+-- Process 0 will release a core at t = 80 ms
+-- ARRIVAL event for process 1 at t = 25 ms
+-- Process 1 starts at t = 25 ms
+-- Process 1 requests a core at t = 25 ms for 75 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- CORE completion event for process 0 at t = 80 ms
+-- Process 1 gets a core at t = 80 ms
+-- Process 1 will release a core at t = 155 ms
+-- Process 0 requests a core at t = 80 ms for 70 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- CORE completion event for process 1 at t = 155 ms
+-- Process 0 gets a core at t = 155 ms
+-- Process 0 will release a core at t = 225 ms
+-- Process 1 requests disk access at t = 155 ms for 7 ms
+-- Process 1 will release the disk at t = 162 ms
+-- DISK completion event for process 1 at t = 162 ms
+-- Process 1 requests a core at t = 162 ms for 10 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- CORE completion event for process 0 at t = 225 ms
+-- Process 1 gets a core at t = 225 ms
+-- Process 1 will release a core at t = 235 ms
+-- Process 0 requests disk access at t = 225 ms for 7 ms
+-- Process 0 will release the disk at t = 232 ms
+-- DISK completion event for process 0 at t = 232 ms
+-- Process 0 requests a core at t = 232 ms for 50 ms
+-- Process 0 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- CORE completion event for process 1 at t = 235 ms
+-- Process 0 gets a core at t = 235 ms
+-- Process 0 will release a core at t = 285 ms
+-- Process 1 requests disk access at t = 235 ms for 7 ms
+-- Process 1 will release the disk at t = 242 ms
+-- DISK completion event for process 1 at t = 242 ms
+-- Process 1 requests a core at t = 242 ms for 10 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- CORE completion event for process 0 at t = 285 ms
+-- Process 1 gets a core at t = 285 ms
+-- Process 1 will release a core at t = 295 ms
+-- Process 0 starts a DISPLAY or an INPUT at t = 285 ms for 80 ms
+-- CORE completion event for process 1 at t = 295 ms
+-- Process 1 starts a DISPLAY or an INPUT at t = 295 ms for 80 ms
+-- USER completion event for process 0 at t = 365 ms
+-- Process 0 requests a core at t = 365 ms for 20 ms
+-- Process 0 gets a core at t = 365 ms
+-- Process 0 will release a core at t = 385 ms
+-- USER completion event for process 1 at t = 375 ms
+-- Process 1 requests a core at t = 375 ms for 20 ms
+-- Process 1 will wait in ready queue
+-- Ready queue now contains 1 ready process(es)
+-- CORE completion event for process 0 at t = 385 ms
+-- Process 1 gets a core at t = 385 ms
+-- Process 1 will release a core at t = 405 ms
+-- Process 0 terminates at t = 385 ms
+ 
+CURRENT STATE OF THE SYSTEM AT t = 385 ms:
+Current number of busy cores: 1 
+READY QUEUE:
+empty
+DISK QUEUE:
+empty
+PROCESS TABLE:
+Process 0 started at 0 ms and is TERMINATED
+Process 1 started at 25 ms and is RUNNING
+ 
+-- CORE completion event for process 1 at t = 405 ms
+-- Process 1 terminates at t = 405 ms
+ 
+CURRENT STATE OF THE SYSTEM AT t = 405 ms:
+Current number of busy cores: 0 
+READY QUEUE:
+empty
+DISK QUEUE:
+empty
+PROCESS TABLE:
+Process 1 started at 25 ms and is TERMINATED
+ 
