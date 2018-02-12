@@ -3,8 +3,7 @@
 //  
 //
 //  Created by Oluwamayowa Adeleke on 1/30/17.
-//
-//
+
 
 #include <stdio.h>
 #include <string.h>
