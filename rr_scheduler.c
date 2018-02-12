@@ -94,6 +94,7 @@ void enqueue(int x, Queue* queue)
                 queue->intArray[++queue->rear]=x;
                 queue->itemCount++;
                 //printf("---- process %d in has been added to %s\n", x, queue->name);
+                //
             }
         }
         
